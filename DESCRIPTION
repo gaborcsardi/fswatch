@@ -1,0 +1,15 @@
+Package: fswatch
+Title: Watch a File or Directory for Changes
+Version: 1.0.0
+Author: Gábor Csárdi
+Maintainer: Gábor Csárdi <csardi.gabor@gmail.com>
+Description: Get notification is a file or any file in a directory changes. It uses the
+  fswatch tool (see <https://github.com/emcrisostomo/fswatch>) and works on
+  major platforms.
+License: GPL-3
+LazyData: true
+URL: https://github.com/gaborcsardi/fswatch
+BugReports: https://github.com/gaborcsardi/fswatch/issues
+RoxygenNote: 5.0.1
+Suggests: 
+    testthat
