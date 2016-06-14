@@ -15,5 +15,7 @@ Imports:
     after
 Suggests: 
     testthat
+Remotes:
+    gaborcsardi/after
 Encoding: UTF-8
 SystemRequirements: fswatch, see https://github.com/emcrisostomo/fswatch
