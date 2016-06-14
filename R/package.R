@@ -95,7 +95,7 @@ fswatch_functions <- list(
 make_watcher <- function(id, path) {
   setup_fswatch(path, id)
   function(id, path, callback) {
-    poll_watcher(id, path, callback)
+    get("poll_watcher", envir = asNamespace("fswatch"))(id, path, callback)
   }
 }
 
