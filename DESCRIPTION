@@ -16,3 +16,4 @@ Imports:
 Suggests: 
     testthat
 Encoding: UTF-8
+SystemRequirements: fswatch, see https://github.com/emcrisostomo/fswatch
