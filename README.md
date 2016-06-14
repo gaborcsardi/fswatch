@@ -24,6 +24,35 @@ source("https://install-github.me/gaborcsardi/fswatch")
 library(fswatch)
 ```
 
+Create a directory and start watching it. The callback will simply print
+the file(s) that has changed.
+
+```r
+tmp <- tempfile()
+dir.create(tmp)
+id <- fswatch(tmp, callback = function(f) print(f))
+```
+
+Now modify the directory to see a notification.
+
+```r
+cat("hello", file = file.path(tmp, "foobar"))
+```
+
+```
+#> [1] "/private/var/folders/ws/7rmdm_cn2pd8l1c3lqyycv0c0000gn/T/Rtmpgj5lSY/file12c557f73ef61/foobar"
+```
+
+Removing the file will also trigger a notification.
+
+```r
+file.remove(file.path(tmp, "foobar"))
+```
+
+```
+#> [1] "/private/var/folders/ws/7rmdm_cn2pd8l1c3lqyycv0c0000gn/T/Rtmpgj5lSY/file12c557f73ef61/foobar"
+```
+
 ## License
 
 GPL-3 © Gábor Csárdi

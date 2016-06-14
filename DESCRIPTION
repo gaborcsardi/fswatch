@@ -11,5 +11,8 @@ LazyData: true
 URL: https://github.com/gaborcsardi/fswatch
 BugReports: https://github.com/gaborcsardi/fswatch/issues
 RoxygenNote: 5.0.1
+Imports:
+    after
 Suggests: 
     testthat
+Encoding: UTF-8
