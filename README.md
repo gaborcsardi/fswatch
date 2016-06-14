@@ -14,6 +14,11 @@ major platforms.
 
 ## Installation
 
+Make sure you install the standalone `fswatch` program first, from
+https://github.com/emcrisostomo/fswatch
+
+Then install the R package as:
+
 ```r
 source("https://install-github.me/gaborcsardi/fswatch")
 ```
